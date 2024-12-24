@@ -25,30 +25,6 @@ public class ArrayRecursion {
         }
         return maxValueHelper(arr, curMaxIndex, curIndex + 1);
     }
-
-
-    public static int[] reverseArray(int[] arr) {
-	    return reverseArray(arr, 0, arr.length - 1);
-    }
-
-    public static int[] reverseArray(int[] arr, int start, int end) {
-        // if the start and end indices have crossed, return the array
-        if (start >= end) {
-            return arr;
-        }
-        // swap the elements at the start and end indices
-        swap(arr, start, end);
-        
-        // recursively reverse the rest of the array
-        return reverseArray(arr, start + 1, end - 1);
-    }
-    
-    private static void swap (int [] arr, int index1, int index2){
-        int temp = arr[index1];
-        arr[index1] = arr[index2];
-        arr[index2] = temp;
-    }
-
     
     public static int[] mergeArrays(int[] arr1, int[] arr2) {
         // create a new array to store the merged elements
