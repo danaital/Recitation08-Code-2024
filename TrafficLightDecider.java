@@ -4,13 +4,13 @@ public class TrafficLightDecider {
         TrafficLightEnum nextLight = TrafficLightEnum.RED;
         switch (light) {
             case RED:
-                nextLight = TrafficLightEnum.GREEN;
+                nextLight = TrafficLightEnum.YELLOW;
                 break;
             case YELLOW:
-                nextLight = TrafficLightEnum.RED;
+                nextLight = TrafficLightEnum.GREEN;
                 break;
             case GREEN:
-                nextLight = TrafficLightEnum.YELLOW;
+                nextLight = TrafficLightEnum.RED;
                 break;
             default:
                 nextLight = TrafficLightEnum.RED;
